@@ -1,0 +1,112 @@
+<!-- Index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashil Mathew - Software Engineer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            overflow: hidden;
+        }
+
+        .half-page {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-half {
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .left-half img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .image-content h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .image-content p {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .right-half {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #ADD8E6, #ffbe98);
+            color: #343a40; /* Dark color for text */
+        }
+
+        .click-me-button {
+            background-color: #0056b3;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+
+        .click-me-button:hover {
+            background-color: #004080;
+        }
+
+        .arrow {
+            margin-left: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 8px;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Half-page layout with background image and button -->
+    <div class="half-page">
+        <!-- Left half with background image and content -->
+        <div class="left-half">
+            <img src="C:\Users\91907\Pictures\IMG_7109.jpg" alt="Your Photo">
+            <div class="image-content">
+            </div>
+        </div>
+
+        <!-- Right half with "Click Me" button and arrow -->
+        <div class="right-half">
+            <button class="click-me-button" onclick="location.href='portfolio.html'">Click Me <div class="arrow"></div></button>
+        </div>
+    </div>
+
+</body>
+
+</html>
